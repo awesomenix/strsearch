@@ -25,7 +25,7 @@ func TestStrSearch(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		n, err := search(c.str, c.substr)
+		n, err := Search(c.str, c.substr)
 		if err != nil {
 			if !c.isError {
 				t.Errorf("StrSearch(%q, %q), error %v", c.str, c.substr, err)

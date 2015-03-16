@@ -12,7 +12,7 @@ import (
 
 //searches substring in string str
 
-func search(str, substr []byte) (int, error) {
+func Search(str, substr []byte) (int, error) {
 	strlen := len(str)
 
 	if strlen <= 0 {
